@@ -1,9 +1,6 @@
-Here's a well-structured README for your Skip Hire Booking System using the recommended format:
+# Skip Hire Selection Page Redesign
 
-```markdown
-# Skip Hire Booking System
-
-A React application for booking commercial skips with a multi-step selection process.
+The redesign of a streamlined online platform for selecting and ordering skip hire services.
 
 ## Table of Contents
 - [Demo](#demo)
@@ -12,29 +9,25 @@ A React application for booking commercial skips with a multi-step selection pro
 - [Usage](#usage)
 - [Configuration](#configuration)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
-- [Authors](#authors)
 
 ## Demo
-![Skip Selection Interface](https://via.placeholder.com/800x400.png?text=Skip+Selection+Interface)
-*Sample interface showing skip selection table and sticky footer*
+![alt text](image.png)
 
 ## Features
-- **Multi-step booking workflow** with progress tracking
-- **Responsive skip selection table** with image previews
-- **Real-time pricing calculation** with VAT handling
-- **Sticky selection footer** with persistent summary
-- **API integration** for location-based skip availability
-- **Visual indicators** for skip specifications (road allowance, waste types)
-- **Loading & error states** for API interactions
-- **Mobile-optimized UI** with Tailwind CSS
+
+* **Location-Based Skip Availability & Pricing:** Fetches and displays skip options  and their pricing tailored to a given postcode and area.
+* **Intuitive Skip Selection:** Users can effortlessly select a skip size from a comprehensive table with detailed information.
+* **Real-time Order Summary:** A sticky footer provides immediate feedback on the selected skip, including its size and total price.
+* **Guided Ordering Process:** A clear progress bar visually tracks the user's journey through different stages of the booking.
+* **Responsive Design:** Optimized for a seamless experience across desktops, tablets, and mobile devices.
+* **Robust Error Handling:** Manages data loading states and provides helpful error messages if data fetching fails.
+
 
 ## Installation
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/skip-hire-system.git
-cd skip-hire-system
+git clone https://github.com/rolky/skiphire.git
+cd skiphire
 
 # Install dependencies
 npm install
@@ -45,19 +38,12 @@ npm run dev
 
 ## Usage
 1. Access the application at `http://localhost:5173`
-2. Progress through booking steps using the top navigation
-3. On skip selection page:
+2. On skip selection page:
    - View available skips with specifications
    - Click "SELECT" or table row to choose a skip
    - Selection details appear in sticky footer
    - Click "CONTINUE" to proceed to next step
 
-## Configuration
-Create `.env` file in root directory:
-```env
-VITE_API_BASE_URL=https://app.wewantwaste.co.uk/api
-VITE_IMAGE_BASE_URL=https://yozbrydxdlcxghkphhtq.supabase.co/storage/v1/object/public/skips/skip-sizes/
-```
 
 ## Project Structure
 ```
@@ -76,49 +62,4 @@ src/
 └── main.jsx             # Entry point
 ```
 
-## Contributing
-Contributions are welcome! Please follow these steps:
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
-5. Open a pull request
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Authors
-- [Your Name](https://github.com/yourusername)
-- [Your Team/Collaborator](https://github.com/teamusername)
-
-## Contact
-For support or inquiries: support@skip-hire-system.com
-```
-
-## Key Features of this README
-
-1. **Clear Project Identification**: Immediately communicates the purpose
-2. **Visual Demonstration**: Placeholder for screenshots/demo link
-3. **Actionable Installation Guide**: Copy-paste ready setup instructions
-4. **Usage Context**: Explains how to interact with the core feature
-5. **Configuration Visibility**: Shows how to set environment variables
-6. **Structure Transparency**: Maps the codebase organization
-7. **Contribution Pathway**: Encourages community involvement
-8. **Legal Compliance**: Explicit licensing information
-
-## Recommended Improvements
-1. Replace placeholder image with actual screenshots
-2. Add animated GIF showing the selection workflow
-3. Include badges for build status/test coverage
-4. Add "Technology Stack" section with framework versions
-5. Create a live demo link once deployed
-
-This README follows modern best practices by:
-- Using clear section headers
-- Providing executable code blocks
-- Balancing technical detail with accessibility
-- Maintaining consistent formatting
-- Including multiple contact options
-- Anticipating user questions at each stage
